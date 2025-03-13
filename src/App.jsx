@@ -5,7 +5,7 @@ import {useEffect} from 'react'
 import Card from '../../Componets/Card'
 import Input from '../../Componets/Input'
 import Button from '../../Componets/Button'
-import {useWeather } from '../../Context/Weather'
+import {useWeather } from './Context/Weather'
 import RefreshButton from '../../Componets/Refreshbutton'
 import FutureWeather from '../../Componets/FutureWeather'
 function App() {
