@@ -2,12 +2,12 @@ import { useState } from 'react'
 import './App.css'
 import './futureweather.css'
 import {useEffect} from 'react'
-import Card from '../../Componets/Card'
-import Input from '../../Componets/Input'
-import Button from '../../Componets/Button'
+import Card from './Componets/Card'
+import Input from './Componets/Input'
+import Button from './Componets/Button'
 import {useWeather } from './Context/Weather'
-import RefreshButton from '../../Componets/Refreshbutton'
-import FutureWeather from '../../Componets/FutureWeather'
+import RefreshButton from './Componets/RefreshButton'
+import FutureWeather from './Componets/FutureWeather'
 function App() {
   const weather = useWeather();
   console.log(weather)
