@@ -1,0 +1,143 @@
+.Future-weather{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.card {
+  margin-top: 50px;
+  width: 260px;
+  height: 150px;
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background {
+  fill: linear-gradient(90deg, #5936B4 0%, #362A84 100%);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.cloud {
+  position: absolute;
+  right: 0;
+  top: -12px;
+}
+
+.cloud svg {
+  height: 120px;
+}
+
+.card .main-text {
+  font-size: 48px;
+  z-index: 2;
+}
+
+.card .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .info .text-gray {
+  color: rgba(235, 235, 245, 0.60);
+}
+
+.card .info .info-right {
+  align-self: flex-end;
+}
+/*  hourly card */
+.Houlry-day{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+.weather-card {
+  margin-top: 20px;
+  width: 140px;
+  height: 210px;
+  background-color: #22272B;
+  color: white;
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+.Weather{
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-icon {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 80px;
+}
+
+.temperature {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70%;
+  transition: all 0.3s ease-in-out;
+}
+
+.weather-info {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Future weather loader */
+/* From Uiverse.io by zeynabashouri */ 
+.loading {
+  width: 45px;
+  height: 40px;
+  background: linear-gradient(
+      #0000 calc(1 * 100% / 6),
+      #fff 0 calc(3 * 100% / 6),
+      #0000 0
+    ),
+    linear-gradient(
+      #0000 calc(2 * 100% / 6),
+      #fff 0 calc(4 * 100% / 6),
+      #0000 0
+    ),
+    linear-gradient(
+      #0000 calc(3 * 100% / 6),
+      #fff 0 calc(5 * 100% / 6),
+      #0000 0
+    );
+  background-size: 10px 400%;
+  background-repeat: no-repeat;
+  animation: matrix 1s infinite linear;
+}
+
+@keyframes matrix {
+  0% {
+    background-position: 0% 100%, 50% 100%, 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%, 50% 0%, 100% 0%;
+  }
+}
